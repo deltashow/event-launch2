@@ -1,0 +1,29 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif; }
+body { background: #0d1117; color: #c9d1d9; }
+
+.portal-container { display: flex; min-height: 100vh; }
+.sidebar { width: 280px; background: #161b22; border-left: 1px solid #30363d; padding: 24px; }
+.brand { display: flex; align-items: center; gap: 10px; color: #58a6ff; font-size: 20px; margin-bottom: 20px; }
+.broker-info { background: #21262d; padding: 12px; border-radius: 8px; margin-bottom: 24px; font-size: 13px; }
+.badge { background: #238636; color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; }
+
+.menu { display: flex; flex-direction: column; gap: 8px; }
+.menu a { color: #8b949e; text-decoration: none; padding: 12px; border-radius: 6px; font-size: 14px; }
+.menu a.active, .menu a:hover { background: #21262d; color: #58a6ff; }
+
+.content { flex: 1; padding: 32px; }
+.top-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+.btn-add-client { background: #238636; color: white; border: none; padding: 12px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; }
+
+.materials-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; margin-bottom: 40px; }
+.material-card { background: #161b22; border: 1px solid #30363d; padding: 20px; border-radius: 10px; text-align: center; }
+.material-card .icon { font-size: 32px; color: #58a6ff; margin-bottom: 12px; }
+.material-card h4 { font-size: 15px; margin-bottom: 6px; }
+.material-card p { font-size: 12px; color: #8b949e; margin-bottom: 16px; }
+.btn-dl { background: #21262d; border: 1px solid #30363d; color: #c9d1d9; width: 100%; padding: 8px; border-radius: 6px; cursor: pointer; }
+
+.protected-clients { background: #161b22; border: 1px solid #30363d; padding: 20px; border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+th, td { text-align: right; padding: 12px; border-bottom: 1px solid #30363d; font-size: 13px; }
+th { color: #8b949e; }
+.status-active { color: #3fb950; font-weight: bold; }

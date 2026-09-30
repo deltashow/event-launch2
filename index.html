@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة المسوقين العقاريين | Broker Partner Portal</title>
+    <link rel="stylesheet" href="brokers-portal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="portal-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-handshake"></i>
+                <h2>BROKER<span>HUB</span></h2>
+            </div>
+            <div class="broker-info">
+                <p>مرحباً، <strong>شركة النخبة للوساطة</strong></p>
+                <span class="badge">العمولة: 2.5%</span>
+            </div>
+            <nav class="menu">
+                <a href="#" class="active"><i class="fa-solid fa-folder-open"></i> الماتريال الحصرية</a>
+                <a href="#"><i class="fa-solid fa-user-check"></i> حماية عميل (Client Protection)</a>
+                <a href="#"><i class="fa-solid fa-wallet"></i> العمولات والحسابات</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header class="top-header">
+                <h2>المواد التسويقية المتاحة للتحميل</h2>
+                <button class="btn-add-client" id="openClientModal"><i class="fa-solid fa-plus"></i> تسجيل عميل جديد باسمك</button>
+            </header>
+
+            <div class="materials-grid">
+                <div class="material-card">
+                    <i class="fa-solid fa-file-pdf icon"></i>
+                    <h4>بروشور الكومباوند 2026</h4>
+                    <p>ملف PDF عالي الجودة متضمن الأسعار</p>
+                    <button class="btn-dl"><i class="fa-solid fa-download"></i> تحميل (45 MB)</button>
+                </div>
+                <div class="material-card">
+                    <i class="fa-solid fa-images icon"></i>
+                    <h4>صور HD للمشروع</h4>
+                    <p>رندرات 3D احترافية للتسويق</p>
+                    <button class="btn-dl"><i class="fa-solid fa-download"></i> تحميل ZIP</button>
+                </div>
+            </div>
+
+            <section class="protected-clients">
+                <h3>عملاؤك المسجلون في النظام</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>اسم العميل</th>
+                            <th>رقم الهاتف</th>
+                            <th>المشروع</th>
+                            <th>تاريخ التسجيل</th>
+                            <th>حالة الحماية</th>
+                        </tr>
+                    </thead>
+                    <tbody id="clientList">
+                        <tr>
+                            <td>محمود الجيار</td>
+                            <td>0100****123</td>
+                            <td>برج أورا</td>
+                            <td>2026-08-01</td>
+                            <td><span class="status-active">محمي (باقي 28 يوم)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="brokers-portal.js"></script>
+</body>
+</html>
